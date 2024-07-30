@@ -28,3 +28,15 @@ body {
     width: 20px;
     height: 20px;
 }
+
+.light {
+    background-color: #d8dfe5;
+}
+
+.medium {
+    background-color: #c0c6cc;
+}
+
+.dark {
+    background-color: #a8adb2;
+}
