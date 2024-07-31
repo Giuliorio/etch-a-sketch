@@ -3,6 +3,7 @@ const container = document.querySelector(".container");
 
 const plus = document.querySelector(".plus");
 const minus = document.querySelector(".minus");
+const reset = document.querySelector(".reset");
 
 // Grid Area
 const makeBox = (height) => {
@@ -56,4 +57,8 @@ display.addEventListener("click", () => {
 
     display.textContent = answer;
     makeGrid(answer)
+})
+
+reset.addEventListener("click", () => {
+    makeGrid(display.textContent)
 })

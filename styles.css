@@ -12,22 +12,27 @@ body {
     align-items: center;  
     gap: 15px;
     color: aliceblue;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .commands {
     height: 50px;
-    width: 300px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.commands > div {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
 .button {
     height: 50px;
     width: 50px;
-}
-
-.commands > div {
     background-color: #333;
     outline: 1px solid #444;
     border-radius: 50%;
@@ -44,8 +49,11 @@ body {
 }
 
 .size-display{
-    height: 50px;
     width: 75px;
+}
+
+.reset {
+    width: 100px;
 }
 
 .container {
