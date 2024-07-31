@@ -1,8 +1,6 @@
-const numberOfSquares = 16;
-const squareArea = numberOfSquares * numberOfSquares;
 const container = document.querySelector(".container");
 
-const makeBox = () => {
+const makeBox = (numberOfSquares) => {
     const height = `${Math.floor(parseFloat(getComputedStyle(container).height)) / numberOfSquares}px`;
     let box = document.createElement("div");
 
@@ -21,10 +19,13 @@ const makeBox = () => {
     return box
 }
 
-const makeGrid = (squareArea) => {
+const makeGrid = () => {
+    const numberOfSquares = document.querySelector(".size-display").textContent;
+    const squareArea = numberOfSquares * numberOfSquares;
+
     for (let i = 0; i <squareArea; i ++) {
-        container.appendChild(makeBox());
+        container.appendChild(makeBox(numberOfSquares));
     }
 }
 
-makeGrid(squareArea);
+makeGrid();
