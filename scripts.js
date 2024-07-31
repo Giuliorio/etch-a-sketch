@@ -5,8 +5,7 @@ const plus = document.querySelector(".plus");
 const minus = document.querySelector(".minus");
 
 // Grid Area
-const makeBox = (numberOfSquares) => {
-    const height = `${parseFloat(getComputedStyle(container).height) / numberOfSquares}px`;
+const makeBox = (height) => {
     let box = document.createElement("div");
 
     box.classList.add("box-item");
@@ -26,10 +25,11 @@ const makeBox = (numberOfSquares) => {
 
 const makeGrid = (numberOfSquares) => {
     const squareArea = numberOfSquares * numberOfSquares;
+    const height = `${parseFloat(getComputedStyle(container).height) / numberOfSquares}px`;
     container.innerHTML = ""
 
     for (let i = 0; i <squareArea; i ++) {
-        container.appendChild(makeBox(numberOfSquares));
+        container.appendChild(makeBox(height));
     }
 }
 
