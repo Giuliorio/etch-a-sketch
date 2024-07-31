@@ -67,21 +67,11 @@ body {
     flex-wrap: wrap;
 }
 
-.container > div {
+.box-item {
     margin: 0;
     padding: 0;
     width: 20px;
     height: 20px;
-}
-
-.light {
-    background-color: #d8dfe5;
-}
-
-.medium {
-    background-color: #c0c6cc;
-}
-
-.dark {
     background-color: #a8adb2;
+    opacity: 0;
 }

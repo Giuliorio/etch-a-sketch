@@ -14,11 +14,9 @@ const makeBox = (height) => {
     box.style.width = height;
 
     box.addEventListener("mouseover", () => {
-        const list = box.classList;
-        if(list.contains("medium")) list.add("dark");
-        if(list.contains("light")) list.add("medium");
-        if (!list.contains("light")) list.add("light");
-        
+        const opacity = box.style.opacity;
+
+        box.style.opacity = opacity ? parseFloat(opacity) + 0.2 : 0.2;
     })
 
     return box
