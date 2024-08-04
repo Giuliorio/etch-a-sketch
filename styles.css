@@ -46,6 +46,7 @@ body {
     background-color: #444;
     outline: 1px solid #555;
     color: #fff7f0;
+    cursor: pointer;
 }
 
 .size-display{
